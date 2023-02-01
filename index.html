@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="A web application to show photos of cat"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Website</title>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav>
+      <a href="#">Shirts</a>
+      <a href="#">Bags</a>
+      <a href="#" class="logo">WEBSITE</a>
+      <a href="#">Gifts</a>
+      <a href="">Toys</a>
+    </nav>
+
+    <!-- HEADER -->
+    <header>
+      <h1>Need a Website?</h1>
+      <p>
+        A website (also written as a web site) is a collection of web pages and
+        related content that is identified by a common domain name and published
+        on at least one web server.
+      </p>
+      <img class="hero-image" src="assets/hero-image.jpg" alt="hero-image" />
+    </header>
+
+    <!-- FORM -->
+    <!-- TEXT INPUT -->
+    <form action="#" class="form">
+      <h2>Join our club to receive special offers!</h2>
+      <div class="form-item">
+        <label for="name">Name </label> <br />
+        <input
+          type="text"
+          name="name"
+          class="form-input"
+          placeholder="Enter your name here"
+          aria-label="Enter your name here"
+          required
+        />
+      </div>
+      <div class="form-item">
+        <label for="name">Email </label> <br />
+        <input
+          type="email"
+          name="email"
+          class="form-input"
+          placeholder="Enter your email here"
+          aria-label="Enter your email here"
+          required
+        />
+      </div>
+
+      <!-- AREA INPUT -->
+      <div class="form-item">
+        <label for="story">Tell us about youself</label> <br />
+        <textarea
+          class="area-input"
+          name="story"
+          cols="30"
+          rows="10"
+          placeholder="Type here"
+          aria-label="Type here"
+        >
+        </textarea>
+      </div>
+
+      <!-- RADIO INPUT -->
+      <div class="radio">
+        <label for="gender">What is your gender?</label> <br />
+        <input type="radio" name="gender" value="male" /> Male
+        <input type="radio" name="gender" value="female" /> Female
+      </div>
+
+      <!-- CHECKLIST INPUT -->
+      <div>
+        <label for="checkbox">You must agree to our terms and agreements</label>
+        <br />
+        <input
+          type="checkbox"
+          class="checkbox-input"
+          name="subscription"
+          name
+        />
+        I want to subscribe to newsletter <br />
+        <input type="checkbox" class="checkbox-input" name="subscription" />
+        I agree to terms and agreements
+      </div>
+
+      <!-- BUTTON INPUT-->
+      <button class="form-button" type="submit">Register</button>
+    </form>
+
+    <footer>This is the footer</footer>
+  </body>
+</html>
+
+<!-- 
+    Responsive Design
+    Form
+    Flex
+    Grid
+    Sticky Nav Header
+
+    Form
+    Text Input ✔️
+    Email Input ✔️
+    Textarea Input✔️
+    Radio Button Input✔️
+    Checklist Input✔️
+    Required Input✔️
+
+    Flexbox
+    Create elements with flex container✔️
+    Centering elements with Flex
+
+    Grid
+    Create symmetrical grid
+    Create asymmetrical grid
+
+    Sticky Nav Header
+    Position fixed
+    Position absolute & relative
+ -->
