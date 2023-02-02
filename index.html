@@ -23,20 +23,26 @@
 
     <!-- HEADER -->
     <header>
-      <h1>Need a Website?</h1>
+      <h1>Easy Website with Grid and Flex</h1>
       <p>
         A website (also written as a web site) is a collection of web pages and
         related content that is identified by a common domain name and published
         on at least one web server.
       </p>
-      <img class="hero-image" src="assets/hero-image.jpg" alt="hero-image" />
+      <section class="buttons">
+        <a class="okay" href="#"><button>Okay</button></a>
+        <a class="nope" href="#"><button>Nope</button></a>
+      </section>
+      <div class="image-container">
+        <img src="assets/hero-image.jpg" alt="hero-image" />
+      </div>
     </header>
 
     <!-- FORM -->
     <!-- TEXT INPUT -->
-    <form action="#" class="form">
+    <form action="#">
       <h2>Join our club to receive special offers!</h2>
-      <div class="form-item">
+      <div class="form-item-name">
         <label for="name">Name </label> <br />
         <input
           type="text"
@@ -47,7 +53,7 @@
           required
         />
       </div>
-      <div class="form-item">
+      <div class="form-item-email">
         <label for="name">Email </label> <br />
         <input
           type="email"
