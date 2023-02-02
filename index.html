@@ -33,78 +33,81 @@
         <a class="okay" href="#"><button>Okay</button></a>
         <a class="nope" href="#"><button>Nope</button></a>
       </section>
-      <div class="image-container">
+      <div class="image-container-hero">
         <img src="assets/hero-image.jpg" alt="hero-image" />
       </div>
     </header>
 
     <!-- FORM -->
-    <!-- TEXT INPUT -->
-    <form action="#">
-      <h2>Join our club to receive special offers!</h2>
-      <div class="form-item-name">
-        <label for="name">Name </label> <br />
-        <input
-          type="text"
-          name="name"
-          class="form-input"
-          placeholder="Enter your name here"
-          aria-label="Enter your name here"
-          required
-        />
+    <section class="form">
+      <div class="image-container-form">
+        <img src="assets/form-image.jpg" alt="form-image" />
       </div>
-      <div class="form-item-email">
-        <label for="name">Email </label> <br />
-        <input
-          type="email"
-          name="email"
-          class="form-input"
-          placeholder="Enter your email here"
-          aria-label="Enter your email here"
-          required
-        />
+      <div class="form-container">
+      <form action="#">
+        <h2>Join our club to receive special offers!</h2>
+        <div class="form-item-name">
+          <label for="name">Name </label> <br />
+          <input
+            type="text"
+            name="name"
+            class="form-input"
+            placeholder="Enter your name here"
+            aria-label="Enter your name here"
+            required
+          />
+        </div>
+        <div class="form-item-email">
+          <label for="name">Email </label> <br />
+          <input
+            type="email"
+            name="email"
+            class="form-input"
+            placeholder="Enter your email here"
+            aria-label="Enter your email here"
+            required
+          />
+        </div>
+
+        <!-- AREA INPUT -->
+        <div class="form-item-about">
+          <label for="story">Tell us about youself</label> <br />
+          <textarea
+            class="area-input"
+            name="story"
+            cols="30"
+            rows="10"
+            placeholder="Type here"
+            aria-label="Type here"
+          >
+          </textarea>
+        </div>
+
+        <!-- RADIO INPUT -->
+        <div class="gender">
+          <label for="gender">What is your gender?</label> <br />
+          <input type="radio" name="gender" value="male" /> Male <br />
+          <input type="radio" name="gender" value="female" /> Female <br />
+          <input type="radio" name="gender" value="not-say" /> Rather not say
+          <br />
+          <input type="radio" name="gender" value="why-ask" /> Why you ask?
+        </div>
+
+        <!-- CHECKLIST INPUT -->
+        <div>
+          <label for="checkbox">Agree to our terms and agreements</label>
+          <br />
+          <input type="checkbox" class="agreement" name="subscription" name />
+          I want to subscribe to newsletter <br />
+          <input type="checkbox" class="checkbox-input" name="subscription" />
+          I agree to terms and agreements
+        </div>
+
+        <!-- BUTTON INPUT-->
+        <button class="form-button" type="submit">Register</button>
       </div>
-
-      <!-- AREA INPUT -->
-      <div class="form-item">
-        <label for="story">Tell us about youself</label> <br />
-        <textarea
-          class="area-input"
-          name="story"
-          cols="30"
-          rows="10"
-          placeholder="Type here"
-          aria-label="Type here"
-        >
-        </textarea>
-      </div>
-
-      <!-- RADIO INPUT -->
-      <div class="radio">
-        <label for="gender">What is your gender?</label> <br />
-        <input type="radio" name="gender" value="male" /> Male
-        <input type="radio" name="gender" value="female" /> Female
-      </div>
-
-      <!-- CHECKLIST INPUT -->
-      <div>
-        <label for="checkbox">You must agree to our terms and agreements</label>
-        <br />
-        <input
-          type="checkbox"
-          class="checkbox-input"
-          name="subscription"
-          name
-        />
-        I want to subscribe to newsletter <br />
-        <input type="checkbox" class="checkbox-input" name="subscription" />
-        I agree to terms and agreements
-      </div>
-
-      <!-- BUTTON INPUT-->
-      <button class="form-button" type="submit">Register</button>
-    </form>
-
+      </form>
+    </section>
     <footer>This is the footer</footer>
   </body>
 </html>
