@@ -29,9 +29,9 @@
       <section class="header-left">
         <h1>Easy Website with Grid and Flex</h1>
         <p>
-          A website (also written as a web site) is a collection of web pages and
-          related content that is identified by a common domain name and published
-          on at least one web server.
+          A website (also written as a web site) is a collection of web pages
+          and related content that is identified by a common domain name and
+          published on at least one web server.
         </p>
         <div class="buttons">
           <a class="okay" href="#"><button>Okay</button></a>
@@ -44,85 +44,116 @@
       </div>
     </header>
 
+    <!-- ASYMMETRIC GRID -->
+    <article class="review">
+      <h1>What They Say</h1>
+      <section class="asymmetric-grid">
+        <div class="box-one">Great!</div>
+        <div class="box-two">Outstanding!</div>
+        <div class="box-three">Quality</div>
+        <div class="box-four">Unbelievable</div>
+        <div class="box-five">The best value for money!</div>
+        <div class="box-six">Wow!</div>
+        <div class="box-seven">Definitely coming back again</div>
+        <div class="box-eight">Enough said</div>
+      </section>
+    </article>
+
     <!-- FORM -->
     <article class="form-flex-container">
       <h1>Limited Offer</h1>
       <section class="form">
-      <div class="registration-note">
-        <h2>Register Now!</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-      </div>
-      <div class="form-container">
-        <form action="#">
-        <h2>Please fill out this form</h2>
-      </div>
+        <div class="registration-note">
+          <h2>Register Now!</h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
+          </p>
+        </div>
+        <form class="form-container">
+          <form action="#">
+            <h2>Please fill out this form</h2>
+            <div class="form-item-name">
+              <label for="name">Name </label> <br />
+              <input
+                type="text"
+                name="name"
+                class="form-input"
+                placeholder="&nbsp;Full Name"
+                aria-label="&nbsp;Full Name"
+                required
+              />
+            </div>
+            <div class="form-item-email">
+              <label for="name">Email </label> <br />
+              <input
+                type="email"
+                name="email"
+                class="form-input"
+                placeholder="&nbsp;name@mail.com"
+                aria-label="&nbsp;name@mail.com"
+                required
+              />
+            </div>
+
+            <!-- AREA INPUT -->
+            <div class="form-item-about">
+              <label for="story">Tell us about youself</label> <br />
+              <textarea
+                class="area-input"
+                name="story"
+                cols="30"
+                rows="10"
+                placeholder="Type here"
+                aria-label="Type here"
+              >
+              </textarea>
+            </div>
+
+            <!-- RADIO INPUT -->
+            <div class="gender">
+              <label for="gender">What is your gender?</label> <br />
+              <input type="radio" name="gender" value="male" /> Male <br />
+              <input type="radio" name="gender" value="female" /> Female <br />
+              <input type="radio" name="gender" value="dont-know" /> I don't
+              know
+              <br />
+              <input type="radio" name="gender" value="frog" /> I'm a frog
+              <br />
+              <input type="radio" name="gender" value="why-ask" /> Why you ask?
+            </div>
+
+            <!-- CHECKLIST INPUT -->
+            <div class="checkbox">
+              <label for="checkbox">Agree to our terms and agreements</label>
+              <br />
+              <input
+                type="checkbox"
+                class="agreement"
+                name="subscription"
+                name
+              />
+              I want to subscribe to newsletter <br />
+              <input
+                type="checkbox"
+                class="checkbox-input"
+                name="subscription"
+              />
+              I agree to terms and agreements
+            </div>
+
+            <!-- BUTTON INPUT-->
+            <button class="form-button" type="submit">Register</button>
+          </form>
         </form>
-        <div class="form-item-name">
-          <label for="name">Name </label> <br />
-          <input
-            type="text"
-            name="name"
-            class="form-input"
-            placeholder="Full Name"
-            aria-label="Full Name"
-            required
-          />
-        </div>
-        <div class="form-item-email">
-          <label for="name">Email </label> <br />
-          <input
-            type="email" 
-            name="email"
-            class="form-input"
-            placeholder="name@mail.com"
-            aria-label="name@mail.com"
-            required
-          />
-        </div>
-
-        <!-- AREA INPUT -->
-        <div class="form-item-about">
-          <label for="story">Tell us about youself</label> <br />
-          <textarea
-            class="area-input"
-            name="story"
-            cols="30"
-            rows="10"
-            placeholder="Type here"
-            aria-label="Type here"
-          >
-          </textarea>
-        </div>
-
-        <!-- RADIO INPUT -->
-        <div class="gender">
-          <label for="gender">What is your gender?</label> <br />
-          <input type="radio" name="gender" value="male" /> Male <br />
-          <input type="radio" name="gender" value="female" /> Female <br />
-          <input type="radio" name="gender" value="dont-know" /> I don't know <br>
-          <input type="radio" name="gender" value="frog" /> I'm a frog
-          <br />
-          <input type="radio" name="gender" value="why-ask" /> Why you ask?
-        </div>
-
-        <!-- CHECKLIST INPUT -->
-        <div class="checkbox">
-          <label for="checkbox">Agree to our terms and agreements</label>
-          <br />
-          <input type="checkbox" class="agreement" name="subscription" name />
-          I want to subscribe to newsletter <br />
-          <input type="checkbox" class="checkbox-input" name="subscription" />
-          I agree to terms and agreements
-        </div>
-
-        <!-- BUTTON INPUT-->
-        <button class="form-button" type="submit">Register</button>
-      </form>
-    </section>
-  </article>
-    <!-- FOOTER -->
-    <footer>
-      
-    </footer>
+      </section>
+    </article>
   </body>
 </html>
