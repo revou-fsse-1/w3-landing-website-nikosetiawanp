@@ -71,8 +71,8 @@ header {
   margin: 50px;
   margin-top: 150px;
   margin-bottom: 50px;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
   display: grid;
   max-width: 1500px;
   grid-template-columns: 1fr 1fr;
