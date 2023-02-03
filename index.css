@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  flex-shrink: 0;
+  flex-shrink: 1;
 }
 body {
   font-family: "Inter";
@@ -14,6 +14,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-self: center;
 }
 
 /* NAVIGATION */
@@ -67,11 +68,13 @@ nav a:hover {
 
 /* HEADER */
 header {
+  margin: 50px;
   margin-top: 150px;
   margin-bottom: 50px;
   padding-left: 100px;
   padding-right: 100px;
   display: grid;
+  max-width: 1500px;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -361,15 +364,28 @@ footer {
   grid-column: 2fr 1fr 1fr 1fr 2fr;
 }
 
-@media screen and (max-width: 1024px) {
+/* lAPTOP */
+/* @media screen and (max-width: 1024px) {
+  body {
+    margin: 75px;
+  }
+  .header-left {
+    flex-shrink: 1;
+  }
+  h1 {
+    font-size: 48px;
+  }
+  header img {
+    flex-shrink: 5;
+  }
+} */
+
+/* TABLET */
+@media screen and (max-width: 768px) {
   body {
     width: 1024px;
   }
   header {
-    /* margin-top: 50px;
-    margin-bottom: 50px;
-    padding-left: 100px;
-    padding-right: 100px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -404,4 +420,37 @@ footer {
     grid-row: 2;
     border-style: none;
   }
+}
+
+/* MOBILE */
+@media screen and (max-width: 425px) {
+  /* NAVIGATION */
+  nav {
+    height: 80px;
+  }
+  header {
+    padding: 0px 20px;
+  }
+}
+
+button {
+  font-size: 24px;
+}
+
+/* ASYMMETRICAL GRID */
+.box-one,
+.box-two,
+.box-three,
+.box-four,
+.box-five,
+.box-six,
+.box-seven,
+.box-eight {
+  font-size: 20px;
+}
+
+/* REGISTRATION FORM */
+.registration-note h2,
+.form-container h2 {
+  font-size: 36px;
 }
