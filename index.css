@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  flex-shrink: 1;
+  flex-shrink: 0;
 }
 body {
   font-family: "Inter";
@@ -71,11 +71,12 @@ header {
   margin: 50px;
   margin-top: 150px;
   margin-bottom: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
+  /* padding-left: 50px;
+  padding-right: 50px; */
   display: grid;
   max-width: 1500px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
+  flex: 1;
 }
 
 .header-left {
@@ -103,6 +104,7 @@ header p {
 /* BUTTONS */
 .buttons {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   align-items: center;
 }
@@ -140,14 +142,15 @@ a button:hover {
 .image-container-hero {
   /* background: #ff1368; */
   display: flex;
+  flex: 1;
   justify-content: center;
   grid-column: 2;
 }
 
 img {
-  width: 650px;
+  max-width: 650px;
   height: auto;
-  object-fit: contain;
+  object-fit: scale-down;
 }
 
 /* ASYMMETRIC GRID */
@@ -159,7 +162,6 @@ img {
   gap: 50px;
 }
 .review h1 {
-  flex-shrink: 1;
   text-align: center;
 }
 
@@ -250,7 +252,7 @@ section.form {
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
   padding: 30px;
-  gap: 50px;
+  gap: 20px;
 
   background: #ff1368;
   color: white;
@@ -364,24 +366,8 @@ footer {
   grid-column: 2fr 1fr 1fr 1fr 2fr;
 }
 
-/* lAPTOP */
-/* @media screen and (max-width: 1024px) {
-  body {
-    margin: 75px;
-  }
-  .header-left {
-    flex-shrink: 1;
-  }
-  h1 {
-    font-size: 48px;
-  }
-  header img {
-    flex-shrink: 5;
-  }
-} */
-
 /* TABLET */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   body {
     width: 1024px;
   }
@@ -389,6 +375,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-left: 0;
   }
   .header-left {
     align-items: center;
