@@ -16,51 +16,62 @@
     <nav>
       <a href="#">Shirts</a>
       <a href="#">Bags</a>
-      <a href="#" class="logo">WEBSITE</a>
+      <div class="logo">
+        <a href="#" class="logo">WEBSITE</a>
+        <b>Pro</b>
+      </div>
       <a href="#">Gifts</a>
       <a href="">Toys</a>
     </nav>
 
     <!-- HEADER -->
     <header>
-      <h1>Easy Website with Grid and Flex</h1>
-      <p>
-        A website (also written as a web site) is a collection of web pages and
-        related content that is identified by a common domain name and published
-        on at least one web server.
-      </p>
-      <section class="buttons">
-        <a class="okay" href="#"><button>Okay</button></a>
-        <a class="nope" href="#"><button>Nope</button></a>
+      <section class="header-left">
+        <h1>Easy Website with Grid and Flex</h1>
+        <p>
+          A website (also written as a web site) is a collection of web pages and
+          related content that is identified by a common domain name and published
+          on at least one web server.
+        </p>
+        <div class="buttons">
+          <a class="okay" href="#"><button>Okay</button></a>
+          <a class="nope" href="#"><button>Nope</button></a>
+        </div>
       </section>
+
       <div class="image-container-hero">
         <img src="assets/hero-image.jpg" alt="hero-image" />
       </div>
     </header>
 
     <!-- FORM -->
-    <section class="form">
-      <div class="image-container-form">
-        <img src="assets/form-image.jpg" alt="form-image" />
+    <article class="form-flex-container">
+      <h1>Limited Offer</h1>
+      <section class="form">
+      <div class="registration-note">
+        <h2>Register Now!</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
       </div>
       <div class="form-container">
-      <form action="#">
-        <h2>Join our club to receive special offers!</h2>
+        <form action="#">
+        <h2>Please fill out this form</h2>
+      </div>
+        </form>
         <div class="form-item-name">
           <label for="name">Name </label> <br />
           <input
             type="text"
             name="name"
             class="form-input"
-            placeholder="Full name"
-            aria-label="Full name"
+            placeholder="Full Name"
+            aria-label="Full Name"
             required
           />
         </div>
         <div class="form-item-email">
           <label for="name">Email </label> <br />
           <input
-            type="email"
+            type="email" 
             name="email"
             class="form-input"
             placeholder="name@mail.com"
@@ -95,7 +106,7 @@
         </div>
 
         <!-- CHECKLIST INPUT -->
-        <div>
+        <div class="checkbox">
           <label for="checkbox">Agree to our terms and agreements</label>
           <br />
           <input type="checkbox" class="agreement" name="subscription" name />
@@ -106,38 +117,12 @@
 
         <!-- BUTTON INPUT-->
         <button class="form-button" type="submit">Register</button>
-      </div>
       </form>
     </section>
+  </article>
+    <!-- FOOTER -->
     <footer>
+      
     </footer>
   </body>
 </html>
-
-<!-- 
-    Responsive Design
-    Form
-    Flex
-    Grid
-    Sticky Nav Header
-
-    Form
-    Text Input ✔️
-    Email Input ✔️
-    Textarea Input✔️
-    Radio Button Input✔️
-    Checklist Input✔️
-    Required Input✔️
-
-    Flexbox
-    Create elements with flex container✔️
-    Centering elements with Flex
-
-    Grid
-    Create symmetrical grid
-    Create asymmetrical grid
-
-    Sticky Nav Header
-    Position fixed
-    Position absolute & relative
- -->
